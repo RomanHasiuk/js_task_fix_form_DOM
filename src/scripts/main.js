@@ -2,7 +2,11 @@
 
 const inputs = document.querySelectorAll('form input');
 
-inputs.forEach((input) => {
+inputs.forEach((input, index) => {
+  if (!input.id) {
+    input.id = `${input.name || 'input'}-${index}`;
+  }
+
   const parentElement = input.parentElement;
   const label = document.createElement('label');
 
