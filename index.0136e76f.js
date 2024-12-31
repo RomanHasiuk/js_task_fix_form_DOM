@@ -1,0 +1,2 @@
+document.querySelectorAll("form input").forEach(function(e,t){e.id||(e.id="".concat(e.name||"input","-").concat(t));var a=e.parentElement,n=document.createElement("label");n.classList.add("field-label"),n.setAttribute("for",e.id);var r=e.name.replace(/([A-Z])/g," $1").trim(),c=r.charAt(0).toUpperCase()+r.slice(1);n.textContent=c,e.placeholder=c,a.prepend(n)});
+//# sourceMappingURL=index.0136e76f.js.map
